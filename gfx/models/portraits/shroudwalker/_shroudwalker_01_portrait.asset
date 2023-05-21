@@ -3,7 +3,7 @@ entity = {
 	pdxmesh = "shroudwalker_01_portrait_mesh"
 
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0.1 chance = 2.0 looping = no animation_speed 100 }
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0.1 chance = 2.0 looping = no animation_speed = 100 }
 	scale = 1
 }
 
@@ -12,7 +12,7 @@ entity = {
 	pdxmesh = "shroudwalker_02_portrait_mesh"
 
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0.1 chance = 2.0 looping = no animation_speed 100 }
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0.1 chance = 2.0 looping = no animation_speed = 100 }
 	scale = 1
 }
 
@@ -21,6 +21,6 @@ entity = {
 	pdxmesh = "shroudwalker_03_portrait_mesh"
 
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0.1 chance = 2.0 looping = no animation_speed 100 }
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0.1 chance = 2.0 looping = no animation_speed = 100 }
 	scale = 1
 }

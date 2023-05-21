@@ -4,7 +4,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_01_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed 100 }
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 0.9
 }
 
@@ -13,7 +13,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_02_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed 100 }
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 0.9
 }
 
@@ -22,7 +22,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_03_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed 100 }
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 1.25
 }
 
@@ -31,7 +31,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_04_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed 100 }
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 1.0
 }
 
@@ -40,7 +40,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_05_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed 100 }
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 0.9
 }
 
@@ -49,7 +49,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_06_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed 100 }
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 1.15
 }
 
@@ -58,7 +58,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_07_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed 100 }
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 1.25
 }
 
@@ -67,7 +67,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_08_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed 100 }
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 1.0
 }
 
@@ -76,7 +76,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_09_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed 100 }
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 1.2
 }
 
@@ -85,7 +85,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_10_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed 100 }
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 1.2
 }
 
@@ -94,7 +94,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_11_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed 100 }
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 0.9
 }
 
@@ -103,7 +103,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_12_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed 100 }
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 1.1
 }
 
@@ -112,7 +112,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_13_mesh"
 
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0  looping = no animation_speed 100 }
+	state = { name = "idle"       animation = "idle"    chance = 5.0  looping = no animation_speed = 100 }
 	scale = 1.1
 }
 
@@ -121,7 +121,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_14_mesh"
 
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed 100 }
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 1.0
 }
 
@@ -130,7 +130,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_15_mesh"
 
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed 100 }
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 1.0
 }
 
@@ -139,6 +139,6 @@ entity = {
 	pdxmesh = "portrait_plantoid_hivemind_mesh"
 
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed 100 }
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 1.0
 }
