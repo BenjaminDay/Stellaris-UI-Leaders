@@ -4,23 +4,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_01_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no next_state = idle
-		event = { time = 0.0 node = "smoke_locator_01" particle = "plantoid_01_pollen"	keep_particle = yes trigger_once = no }
-	}
-	state = { name = "idle"       animation = "idle2"   chance = 1.5 looping = no next_state = idle
-		event = { time = 0.0 node = "smoke_locator_01" particle = "plantoid_01_pollen"	keep_particle = yes trigger_once = no }
-	}
-	state = { name = "idle"       animation = "idle3"   chance = 1.5 looping = no next_state = idle
-		event = { time = 0.0 node = "smoke_locator_01" particle = "plantoid_01_pollen"	keep_particle = yes trigger_once = no }
-	}
-	state = { name = "idle"       animation = "idle4"   chance = 0.5 looping = no next_state = idle
-		event = { time = 0.0 node = "smoke_locator_01" particle = "plantoid_01_pollen"	keep_particle = yes trigger_once = no }
-		event = { time = 0.63 node = "smoke_locator_01" particle = "plantoid_01_pollen_large"	keep_particle = yes trigger_once = no }
-	}
-	state = { name = "idle"       animation = "idle5"   chance = 0.1 looping = no next_state = idle
-		event = { time = 0.0 node = "smoke_locator_01" particle = "plantoid_01_pollen"	keep_particle = yes trigger_once = no }
-		event = { time = 3.225 node = "smoke_locator_01" particle = "plantoid_01_pollen_sneeze"	keep_particle = yes trigger_once = no }
-	}
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 0.9
 }
 
@@ -29,25 +13,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_02_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no next_state = idle
-		event = { time = 0.0 node = "glow_1" particle = "plantoid_02_glow"	keep_particle = yes trigger_once = no }
-		event = { time = 0.0 node = "glow_2" particle = "plantoid_02_glow"	keep_particle = yes trigger_once = no }
-		event = { time = 0.0 node = "glow_3" particle = "plantoid_02_glow"	keep_particle = yes trigger_once = no }
-		event = { time = 0.0 node = "glow_4" particle = "plantoid_02_glow"	keep_particle = yes trigger_once = no }
-	}
-	state = { name = "idle"       animation = "idle2"   chance = 0.5 looping = no next_state = idle
-		event = { time = 0.0 node = "glow_1" particle = "plantoid_02_glow"	keep_particle = yes trigger_once = no }
-		event = { time = 0.0 node = "glow_2" particle = "plantoid_02_glow"	keep_particle = yes trigger_once = no }
-		event = { time = 0.0 node = "glow_3" particle = "plantoid_02_glow"	keep_particle = yes trigger_once = no }
-		event = { time = 0.0 node = "glow_4" particle = "plantoid_02_glow"	keep_particle = yes trigger_once = no }
-	}
-	state = { name = "idle"       animation = "idle3"   chance = 0.5 looping = no next_state = idle
-		event = { time = 0.0 node = "glow_1" particle = "plantoid_02_glow"	keep_particle = yes trigger_once = no }
-		event = { time = 0.0 node = "glow_2" particle = "plantoid_02_glow"	keep_particle = yes trigger_once = no }
-		event = { time = 0.0 node = "glow_3" particle = "plantoid_02_glow"	keep_particle = yes trigger_once = no }
-		event = { time = 0.0 node = "glow_4" particle = "plantoid_02_glow"	keep_particle = yes trigger_once = no }
-	}
-	state = { name = "idle"       animation = "idle4"   chance = 0.4 looping = no next_state = idle }
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 0.9
 }
 
@@ -56,10 +22,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_03_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle2"   chance = 0.5 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle3"   chance = 0.5 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle4"   chance = 0.5 looping = no next_state = idle	}
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 1.25
 }
 
@@ -68,9 +31,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_04_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle2"   chance = 0.5 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle3"   chance = 0.5 looping = no next_state = idle	}
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 1.0
 }
 
@@ -79,10 +40,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_05_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle2"   chance = 0.5 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle3"   chance = 1.5 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle4"   chance = 1.0 looping = no next_state = idle	}
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 0.9
 }
 
@@ -91,9 +49,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_06_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle2"   chance = 1.0 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle3"   chance = 1.0 looping = no next_state = idle	}
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 1.15
 }
 
@@ -102,10 +58,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_07_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle2"   chance = 1.0 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle3"   chance = 1.0 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle4"   chance = 1.0 looping = no next_state = idle	}
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 1.25
 }
 
@@ -114,10 +67,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_08_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle2"   chance = 0.5 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle3"   chance = 0.5 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle4"   chance = 0.5 looping = no next_state = idle	}
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 1.0
 }
 
@@ -126,10 +76,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_09_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle2"   chance = 0.5 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle3"   chance = 0.5 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle4"   chance = 1.0 looping = no next_state = idle	}
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 1.2
 }
 
@@ -138,10 +85,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_10_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle2"   chance = 0.5 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle3"   chance = 0.5 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle4"   chance = 0.5 looping = no next_state = idle	}
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 1.2
 }
 
@@ -150,10 +94,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_11_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle2"   chance = 0.5 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle3"   chance = 0.5 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle4"   chance = 0.5 looping = no next_state = idle	}
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 0.9
 }
 
@@ -162,10 +103,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_12_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle2"   chance = 0.5 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle3"   chance = 1.0 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle4"   chance = 0.5 looping = no next_state = idle	}
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 1.1
 }
 
@@ -174,12 +112,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_13_mesh"
 
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0  looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle2"   chance = 1.0  looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle3"   chance = 1.0  looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle4"   chance = 0.5  looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle5"   chance = 0.25 looping = no next_state = idle	}
-	
+	state = { name = "idle"       animation = "idle"    chance = 5.0  looping = no animation_speed = 100 }
 	scale = 1.1
 }
 
@@ -188,14 +121,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_14_mesh"
 
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle2"   chance = 0.5 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle3"   chance = 0.5 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle4"   chance = 1.0 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle5"   chance = 1.0 looping = no next_state = idle	
-		event = { time = 1.56 node = "smoke_2" particle = "plantoid_14_dirt"	keep_particle = yes trigger_once = yes }
-		event = { time = 3.73 node = "smoke_1" particle = "plantoid_14_dirt"	keep_particle = yes trigger_once = yes }
-	}
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 1.0
 }
 
@@ -204,10 +130,7 @@ entity = {
 	pdxmesh = "portrait_plantoid_15_mesh"
 
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle2"   chance = 0.5 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle3"   chance = 0.5 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle4"   chance = 1.0 looping = no next_state = idle	}
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 1.0
 }
 
@@ -216,9 +139,6 @@ entity = {
 	pdxmesh = "portrait_plantoid_hivemind_mesh"
 
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle2"   chance = 0.5 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle3"   chance = 0.5 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle4"   chance = 1.0 looping = no next_state = idle	}
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no animation_speed = 100 }
 	scale = 1.0
 }
