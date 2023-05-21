@@ -8,4 +8,5 @@ tags={
 }
 picture="thumbnail.png"
 supported_version="3.8.*"
+path="C:/Users/Ben/Documents/Paradox Interactive/Stellaris/mod/UI Overhaul Leaders"
 remote_file_id="2976235256"
