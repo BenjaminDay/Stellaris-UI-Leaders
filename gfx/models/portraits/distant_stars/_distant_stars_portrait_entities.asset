@@ -1,4 +1,3 @@
-#done
 entity = {
 	name = "portrait_mammalian_ratling_entity"
 	pdxmesh = "portrait_mammalian_ratling_mesh"
