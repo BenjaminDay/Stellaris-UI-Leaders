@@ -1,0 +1,629 @@
+#RENOWNED
+
+# Renown 01 - Humanoid Militarist
+entity = {
+	name = "paragon_01_renown_portrait_01_entity"
+	pdxmesh = "paragon_01_renown_portrait_01_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 5.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle2"    animation_blend_time = 0 chance = 2.0 looping = no next_state = idle}
+	#state = { name = "idle"       animation = "idle3"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle4"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+}
+
+# Renown 02 - Big Lizard General
+entity = {
+	name = "paragon_01_renown_portrait_02_entity"
+	pdxmesh = "paragon_01_renown_portrait_02_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 1 chance = 5.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle2"    animation_blend_time = 1 chance = 2.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle3"    animation_blend_time = 1 chance = 1.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle4"    animation_blend_time = 1 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+}
+
+# Renown 03 - Tactical Combat Robot
+entity = {
+	name = "paragon_01_renown_portrait_03_entity"
+	pdxmesh = "paragon_01_renown_portrait_03_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 5.0 looping = no next_state = idle
+	start_event = { node = "hologram_01" particle = "par_01_head_holo_effect"	keep_particle = no trigger_once = yes }
+	}
+	state = { name = "idle"       animation = "idle2"    animation_blend_time = 0 chance = 3.0 looping = no next_state = idle
+	start_event = { node = "hologram_01" particle = "par_01_head_holo_effect"	keep_particle = no trigger_once = yes }
+	}
+	state = { name = "idle"       animation = "idle3"    animation_blend_time = 0 chance = 2.0 looping = no next_state = idle
+	start_event = { node = "hologram_01" particle = "par_01_head_holo_effect"	keep_particle = no trigger_once = yes }
+	}
+	scale = 1
+}
+
+# Renown 04 - Dr Frankenstein Governor
+entity = {
+	name = "paragon_01_renown_portrait_04_entity"
+	pdxmesh = "paragon_01_renown_portrait_04_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 5.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle2"    animation_blend_time = 0 chance = 2.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle3"    animation_blend_time = 0 chance = 2.0 looping = no next_state = idle}
+
+	scale = 1
+}
+
+# Renown 05 - Great Scientist
+entity = {
+	name = "paragon_01_renown_portrait_05_entity"
+	pdxmesh = "paragon_01_renown_portrait_05_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 5.0 looping = no next_state = idle
+	#start_event = { node = "tablet_effect" particle = "par_01_tablet_effect" keep_particle = no trigger_once = yes }
+}
+	state = { name = "idle"       animation = "idle2"    animation_blend_time = 0 chance = 2.0 looping = no next_state = idle
+	#start_event = { node = "tablet_effect" particle = "par_01_tablet_effect" keep_particle = no trigger_once = yes }
+}
+	state = { name = "idle"       animation = "idle3"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle
+	#start_event = { node = "tablet_effect" particle = "par_01_tablet_effect" keep_particle = no trigger_once = yes }
+}
+	state = { name = "idle"       animation = "idle4"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle
+	#start_event = { node = "tablet_effect" particle = "par_01_tablet_effect" keep_particle = no trigger_once = yes }
+}
+	scale = 1.1
+
+	attach = { "tablet_effect" = "paragon_01_renown_portrait_05_vfx_entity" }
+	#locator = { name = "root" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "paragon_01_renown_portrait_05_vfx_entity"
+	pdxmesh = "paragon_01_renown_portrait_05_vfx_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 5.0 looping = no next_state = idle}
+	scale = 1.0
+
+	game_data = {
+		bloom_factor = 1.8
+		uv_animation_speed = 0.08
+		uv_animation_direction = { 0.25 0.75 }
+		}
+}
+
+# Renown 06 - Chivalrous Soldier
+entity = {
+	name = "paragon_01_renown_portrait_06_entity"
+	pdxmesh = "paragon_01_renown_portrait_06_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 5.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle2"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	#state = { name = "idle"       animation = "idle3"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle4"    animation_blend_time = 0 chance = 3.0 looping = no next_state = idle}
+	scale = 1
+}
+
+# Renown 07 - Salvager Engineer
+entity = {
+	name = "paragon_01_renown_portrait_07_entity"
+	pdxmesh = "paragon_01_renown_portrait_07_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 2.0 looping = no next_state = idle
+	start_event = { node = "spark_effect" particle = "par_01_welding_effect_01_effect"	keep_particle = yes trigger_once = yes } }
+
+	state = { name = "idle"       animation = "idle2"    animation_blend_time = 0 chance = 4.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle3"    animation_blend_time = 0 chance = 2.0 looping = no next_state = idle
+	start_event = { node = "spark_effect" particle = "par_01_welding_effect_02_effect"		keep_particle = yes trigger_once = yes } }
+	scale = 1
+}
+
+# Renown 08 - Ascended Organic
+entity = {
+	name = "paragon_01_renown_portrait_08_entity"
+	pdxmesh = "paragon_01_renown_portrait_08_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 5.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle2"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle3"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle4"    animation_blend_time = 0 chance = 3.0 looping = no next_state = idle}
+	scale = 1
+}
+
+# Renown 09 - Mammilian Pacifict Admiral
+entity = {
+	name = "paragon_01_renown_portrait_09_entity"
+	pdxmesh = "paragon_01_renown_portrait_09_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 5.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle2"    animation_blend_time = 0 chance = 2.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle3"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle4"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+}
+
+# Renown 10 - Vas The Gilded
+entity = {
+	name = "paragon_01_renown_portrait_10_entity"
+	pdxmesh = "paragon_01_renown_portrait_10_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 5.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle2"    animation_blend_time = 0 chance = 2.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle3"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+}
+
+# Renown 11 - Charismatic Explorer
+entity = {
+	name = "paragon_01_renown_portrait_11_entity"
+	pdxmesh = "paragon_01_renown_portrait_11_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 5.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle2"    animation_blend_time = 0 chance = 2.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle3"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle4"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+}
+
+# Renown 12 - Pirate Admiral
+entity = {
+	name = "paragon_01_renown_portrait_12_entity"
+	pdxmesh = "paragon_01_renown_portrait_12_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 5.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle2"    animation_blend_time = 0 chance = 2.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle3"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle4"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+}
+
+# Renown 13 - Slimy Governor
+entity = {
+	name = "paragon_01_renown_portrait_13_entity"
+	pdxmesh = "paragon_01_renown_portrait_13_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 5.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle2"    animation_blend_time = 0 chance = 2.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle3"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle4"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+}
+
+# Renown 14 - Cloaked Spymaster
+entity = {
+	name = "paragon_01_renown_portrait_14_entity"
+	pdxmesh = "paragon_01_renown_portrait_14_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 5.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle2"    animation_blend_time = 0 chance = 2.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle3"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle4"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+}
+
+# Renown 15 - Spiritualist Governor
+entity = {
+	name = "paragon_01_renown_portrait_15_entity"
+	pdxmesh = "paragon_01_renown_portrait_15_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 5.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle2"    animation_blend_time = 0 chance = 2.0 looping = no next_state = idle}
+	scale = 1
+}
+
+# Renown 16 - Spiritualist Governor
+entity = {
+	name = "paragon_01_renown_portrait_16_entity"
+	pdxmesh = "paragon_01_renown_portrait_16_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 5.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle2"    animation_blend_time = 0 chance = 2.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle3"    animation_blend_time = 0 chance = 5.0 looping = no next_state = idle}
+	scale = 1
+}
+
+#LEGENDARY
+
+# Legendary 01 - The beholder
+entity = {
+	name = "paragon_01_legendary_portrait_01_entity"
+	pdxmesh = "paragon_01_legendary_portrait_01_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 5.0 looping = no next_state = idle
+	start_event = { node = "middle_pyramid_effect" particle = "par_01_beholder_portrait_ship_part_effect"	keep_particle = no trigger_once = yes }
+	start_event = { node = "beholder_sparkle_effect_01" particle = "par_01_beholder_portrait_sparkles_effect"	keep_particle = no trigger_once = yes }
+	start_event = { node = "beholder_sparkle_effect_02" particle = "par_01_beholder_portrait_sparkles_effect"	keep_particle = no trigger_once = yes }
+	start_event = { node = "beholder_sparkle_effect_03" particle = "par_01_beholder_portrait_sparkles_effect"	keep_particle = no trigger_once = yes }
+	}
+	scale = 1
+}
+
+# Legendary 02 - Skrand
+entity = {
+	name = "paragon_01_legendary_portrait_02_entity"
+	pdxmesh = "paragon_01_legendary_portrait_02_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 5.0 looping = no next_state = idle}
+	scale = 1
+}
+
+
+# Legendary 03 - Sad Plantoid - ASTROCREATOR AZARYN
+entity = {
+	name = "paragon_01_legendary_portrait_03_entity"
+	pdxmesh = "paragon_01_legendary_portrait_03_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 5.0 looping = no next_state = idle}
+	state = { name = "greeting"       animation = "greeting"    animation_blend_time = 0 chance = 5.0 looping = no next_state = idle}
+	scale = 1
+}
+
+# Legendary 04 - EXAKEIDES
+entity = {
+	name = "paragon_01_legendary_portrait_04_entity"
+	pdxmesh = "paragon_01_legendary_portrait_04_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 5.0 looping = no next_state = idle}
+	scale = 1
+}
+
+	####################################################
+	#############	GESTALT	    NODES 	############
+	####################################################
+	
+# Gestalt Governor
+entity = {
+	name = "gestalt_node_governor_entity_01"
+	pdxmesh = "gestalt_node_portrait_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+
+	attach = { "hip" = "councilor_hive_governor_vfx_entity_01" }
+	locator = { name = "hip" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "councilor_hive_governor_vfx_entity_01"
+	pdxmesh = "gestalt_node_portrait_governor_vfx_01"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+	
+	game_data = {
+	bloom_factor = 1.8
+	uv_animation_speed = 0.08
+	uv_animation_direction = { 0.25 0.75 }
+	}
+}
+
+entity = {
+	name = "gestalt_node_governor_entity_02"
+	pdxmesh = "gestalt_node_portrait_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+
+	attach = { "hip" = "councilor_hive_governor_vfx_entity_02" }
+	locator = { name = "hip" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "councilor_hive_governor_vfx_entity_02"
+	pdxmesh = "gestalt_node_portrait_governor_vfx_02"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+	
+	game_data = {
+	bloom_factor = 1.8
+	uv_animation_speed = 0.08
+	uv_animation_direction = { 0.25 0.75 }
+	}
+}
+
+entity = {
+	name = "gestalt_node_governor_entity_03"
+	pdxmesh = "gestalt_node_portrait_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+
+	attach = { "hip" = "councilor_hive_governor_vfx_entity_03" }
+	locator = { name = "hip" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "councilor_hive_governor_vfx_entity_03"
+	pdxmesh = "gestalt_node_portrait_governor_vfx_03"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+	
+	game_data = {
+	bloom_factor = 1.8
+	uv_animation_speed = 0.08
+	uv_animation_direction = { 0.25 0.75 }
+	}
+}
+
+# Gestalt Scientist
+entity = {
+	name = "gestalt_node_scientist_entity_01"
+	pdxmesh = "gestalt_node_portrait_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+
+	attach = { "hip" = "councilor_hive_scientist_vfx_entity_01" }
+	locator = { name = "hip" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "councilor_hive_scientist_vfx_entity_01"
+	pdxmesh = "gestalt_node_portrait_scientist_vfx_01"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+	
+	game_data = {
+	bloom_factor = 1.8
+	uv_animation_speed = 0.08
+	uv_animation_direction = { 0.25 0.75 }
+	}
+}
+
+entity = {
+	name = "gestalt_node_scientist_entity_02"
+	pdxmesh = "gestalt_node_portrait_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+
+	attach = { "hip" = "councilor_hive_scientist_vfx_entity_02" }
+	locator = { name = "hip" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "councilor_hive_scientist_vfx_entity_02"
+	pdxmesh = "gestalt_node_portrait_scientist_vfx_02"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+	
+	game_data = {
+	bloom_factor = 1.8
+	uv_animation_speed = 0.08
+	uv_animation_direction = { 0.25 0.75 }
+	}
+}
+
+entity = {
+	name = "gestalt_node_scientist_entity_03"
+	pdxmesh = "gestalt_node_portrait_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+
+	attach = { "hip" = "councilor_hive_scientist_vfx_entity_03" }
+	locator = { name = "hip" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "councilor_hive_scientist_vfx_entity_03"
+	pdxmesh = "gestalt_node_portrait_scientist_vfx_03"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+	
+	game_data = {
+	bloom_factor = 1.8
+	uv_animation_speed = 0.08
+	uv_animation_direction = { 0.25 0.75 }
+	}
+}
+
+# Gestalt Admiral
+entity = {
+	name = "gestalt_node_admiral_entity_01"
+	pdxmesh = "gestalt_node_portrait_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+
+	attach = { "hip" = "councilor_hive_admiral_vfx_entity_01" }
+	locator = { name = "hip" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "councilor_hive_admiral_vfx_entity_01"
+	pdxmesh = "gestalt_node_portrait_admiral_vfx_01"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+	
+	game_data = {
+	bloom_factor = 1.8
+	uv_animation_speed = 0.08
+	uv_animation_direction = { 0.25 0.75 }
+	}
+}
+
+entity = {
+	name = "gestalt_node_admiral_entity_02"
+	pdxmesh = "gestalt_node_portrait_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+
+	attach = { "hip" = "councilor_hive_admiral_vfx_entity_02" }
+	locator = { name = "hip" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "councilor_hive_admiral_vfx_entity_02"
+	pdxmesh = "gestalt_node_portrait_admiral_vfx_02"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+	
+	game_data = {
+	bloom_factor = 1.8
+	uv_animation_speed = 0.08
+	uv_animation_direction = { 0.25 0.75 }
+	}
+}
+
+entity = {
+	name = "gestalt_node_admiral_entity_03"
+	pdxmesh = "gestalt_node_portrait_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+
+	attach = { "hip" = "councilor_hive_admiral_vfx_entity_03" }
+	locator = { name = "hip" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "councilor_hive_admiral_vfx_entity_03"
+	pdxmesh = "gestalt_node_portrait_admiral_vfx_03"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+	
+	game_data = {
+	bloom_factor = 1.8
+	uv_animation_speed = 0.08
+	uv_animation_direction = { 0.25 0.75 }
+	}
+}
+
+# Gestalt General
+entity = {
+	name = "gestalt_node_general_entity_01"
+	pdxmesh = "gestalt_node_portrait_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+
+	attach = { "hip" = "councilor_hive_general_vfx_entity_01" }
+	locator = { name = "hip" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "councilor_hive_general_vfx_entity_01"
+	pdxmesh = "gestalt_node_portrait_general_vfx_01"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+	
+	game_data = {
+	bloom_factor = 1.8
+	uv_animation_speed = 0.08
+	uv_animation_direction = { 0.25 0.75 }
+	}
+}
+
+entity = {
+	name = "gestalt_node_general_entity_02"
+	pdxmesh = "gestalt_node_portrait_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+
+	attach = { "hip" = "councilor_hive_general_vfx_entity_02" }
+	locator = { name = "hip" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "councilor_hive_general_vfx_entity_02"
+	pdxmesh = "gestalt_node_portrait_general_vfx_02"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+	
+	game_data = {
+	bloom_factor = 1.8
+	uv_animation_speed = 0.08
+	uv_animation_direction = { 0.25 0.75 }
+	}
+}
+
+entity = {
+	name = "gestalt_node_general_entity_03"
+	pdxmesh = "gestalt_node_portrait_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+
+	attach = { "hip" = "councilor_hive_general_vfx_entity_03" }
+	locator = { name = "hip" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "councilor_hive_general_vfx_entity_03"
+	pdxmesh = "gestalt_node_portrait_general_vfx_03"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+	
+	game_data = {
+	bloom_factor = 1.8
+	uv_animation_speed = 0.08
+	uv_animation_direction = { 0.25 0.75 }
+	}
+}
+
+#Placholder
+entity = {
+	name = "paragon_01_portrait_01_entity"
+	pdxmesh = "paragon_01_portrait_01_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle}
+	scale = 1
+}
