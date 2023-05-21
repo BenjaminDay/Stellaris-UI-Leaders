@@ -91,6 +91,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_leader_already_on_council"
+		texturefile = "gfx/interface/leaders/leader_already_on_council.dds"
+	}
+
+
+	spriteType = {
 		name = "GFX_leader_status_bg_no_assignment_expanded"
 		texturefile = "gfx/interface/leaders/leader_status_bg_no_assignment_expanded.dds"
 	}
