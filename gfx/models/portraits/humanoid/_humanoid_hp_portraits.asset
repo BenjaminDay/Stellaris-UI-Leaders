@@ -1,3 +1,4 @@
+#done
 entity = {
 	name = "humanoid_hp_01_entity"
 	pdxmesh = "humanoid_hp_01_mesh"
