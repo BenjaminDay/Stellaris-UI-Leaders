@@ -1,0 +1,28 @@
+entity = {
+	name = "advisor_entity"
+	pdxmesh = "advisor_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"	animation = "idle" chance = 2.0 looping = no animation_speed = 100 }
+	scale = 4
+}
+
+animation = {
+		name = "advisor_idle_animation"
+		file = "advisor_idle.anim"
+}
+
+animation = {
+		name = "advisor_special_1_animation"
+		file = "advisor_special_1.anim"
+}
+
+animation = {
+		name = "advisor_special_2_animation"
+		file = "advisor_special_2.anim"
+}
+
+animation = {
+		name = "advisor_special_3_animation"
+		file = "advisor_special_3.anim"
+}
