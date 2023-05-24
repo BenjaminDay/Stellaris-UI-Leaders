@@ -1,5 +1,5 @@
 name="UI Overhaul Leaders"
-version="1.2"
+version="1.3"
 tags={
 	"Graphics"
 	"Utilities"
