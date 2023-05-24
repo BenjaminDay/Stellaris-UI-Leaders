@@ -1210,7 +1210,7 @@ guiTypes = {
 			}
 
 			iconType = {
-				name = "status_on_council_overlay"
+				name = "already_on_council_overlay"
 				position = { x = 3 y = 0 }
 				spriteType = "GFX_leader_already_on_council"
 				alwaysTransparent = yes
