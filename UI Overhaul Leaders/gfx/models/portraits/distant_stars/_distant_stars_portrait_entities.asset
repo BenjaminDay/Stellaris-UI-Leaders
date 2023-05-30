@@ -1,8 +1,0 @@
-entity = {
-	name = "portrait_mammalian_ratling_entity"
-	pdxmesh = "portrait_mammalian_ratling_mesh"
-	
-	default_state = "idle"
-	state = { name = "idle"	animation = "idle" chance = 3.0 looping = no animation_speed = 100 }
-	scale = 1.05
-}
