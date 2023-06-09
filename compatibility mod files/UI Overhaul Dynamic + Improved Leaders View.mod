@@ -1,5 +1,5 @@
 name="UI Overhaul Dynamic + Improved Leaders View"
-version="1.3"
+version="1.5"
 tags={
 	"Fixes"
 	"Utilities"
