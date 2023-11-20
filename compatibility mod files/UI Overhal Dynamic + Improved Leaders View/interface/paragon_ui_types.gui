@@ -266,8 +266,8 @@ guiTypes = {
 		### PORTRAIT ###
 		containerWindowType = {
 			name = "character_portrait_container_clipping_mask"
-			position = { x = 4 y = 5 }
-			size = { width = -4 height = -5 }
+			position = { x = 6 y = 6 }
+			size = { width = -6 height = -6 }
 			clipping = yes
 			iconType = {
 				name = "character_portrait"
@@ -308,7 +308,7 @@ guiTypes = {
 		}
 		### LEADER ASSIGNMENT ###
 		buttonType = {
-			name = "assign_character"
+			name = "assign_character_button"
 			quadTextureSprite = "GFX_invisible"
 			size = { x = 70 y = 70 }
 			position = { x = -35 y = -35 }
@@ -326,11 +326,33 @@ guiTypes = {
 			}
 		}
 		containerWindowType = {
+			name = "on_hover_assign_container_disabled"
+			size = { width = 100% height = 100% }
+			iconType = {
+				name = "assign_character"
+				spriteType = "GFX_assign_leader_disabled"
+				orientation = center
+				centerPosition = yes
+				alwaysTransparent = yes
+			}
+		}
+		containerWindowType = {
 			name = "on_hover_replace_container"
 			size = { width = 100% height = 100% }
 			iconType = {
 				name = "replace_character"
 				spriteType = "GFX_replace_leader"
+				orientation = center
+				centerPosition = yes
+				alwaysTransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "on_hover_replace_container_disabled"
+			size = { width = 100% height = 100% }
+			iconType = {
+				name = "replace_character"
+				spriteType = "GFX_replace_leader_disabled"
 				orientation = center
 				centerPosition = yes
 				alwaysTransparent = yes
@@ -614,12 +636,6 @@ guiTypes = {
 				centerPosition = yes
 				alwaysTransparent = yes
 			}
-			#iconType = {
-			#	name = "leader_rarity_icon"
-			#	spriteType = "GFX_ui_leader_rarity_hexagon_square"
-			#	orientation = center
-			#	centerPosition = yes
-			#}
 			iconType = {
 				name = "character_portrait"
 				quadTextureSprite = "GFX_portrait_character_mid_close_up"
@@ -664,19 +680,23 @@ guiTypes = {
 			}
 		}
 		### LEADER ASSIGNMENT ###
-		buttonType = {
-			name = "assign_character"
-			quadTextureSprite = "GFX_invisible"
-			size = { x = 70 y = 70 }
-			position = { x = -35 y = -35 }
-			orientation = center
-		}
 		containerWindowType = {
 			name = "on_hover_assign_container"
 			size = { width = 100% height = 100% }
 			iconType = {
 				name = "assign_character"
 				spriteType = "GFX_assign_leader"
+				orientation = center
+				centerPosition = yes
+				alwaysTransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "on_hover_assign_container_disabled"
+			size = { width = 100% height = 100% }
+			iconType = {
+				name = "assign_character"
+				spriteType = "GFX_assign_leader_disabled"
 				orientation = center
 				centerPosition = yes
 				alwaysTransparent = yes
@@ -692,6 +712,24 @@ guiTypes = {
 				centerPosition = yes
 				alwaysTransparent = yes
 			}
+		}
+		containerWindowType = {
+			name = "on_hover_replace_container_disabled"
+			size = { width = 100% height = 100% }
+			iconType = {
+				name = "replace_character"
+				spriteType = "GFX_replace_leader_disabled"
+				orientation = center
+				centerPosition = yes
+				alwaysTransparent = yes
+			}
+		}
+		buttonType = {
+			name = "assign_character_button"
+			quadTextureSprite = "GFX_invisible"
+			size = { x = 70 y = 70 }
+			position = { x = -35 y = -35 }
+			orientation = center
 		}
 		### ASSIGNED LEADER INFO ###
 		containerWindowType = {
@@ -858,7 +896,7 @@ guiTypes = {
 			}
 		}
 		buttonType = {
-			name = "assign_character"
+			name = "assign_character_button"
 			quadTextureSprite = "GFX_invisible"
 			size = { x = 100 y = @slim_row_h }
 		}
@@ -1151,7 +1189,7 @@ guiTypes = {
 			}
 		}
 		buttonType = {
-			name = "assign_character"
+			name = "assign_character_button"
 			quadTextureSprite = "GFX_invisible"
 			size = { x = 100 y = @slim_row_h }
 		}
@@ -1426,7 +1464,7 @@ guiTypes = {
 			}
 		}
 		buttonType = {
-			name = "assign_character"
+			name = "assign_character_button"
 			quadTextureSprite = "GFX_invisible"
 			size = { x = 100 y = @slim_row_h }
 		}
@@ -1717,7 +1755,7 @@ guiTypes = {
 			}
 		}
 		buttonType = {
-			name = "assign_character"
+			name = "assign_character_button"
 			quadTextureSprite = "GFX_invisible"
 			size = { x = 100 y = 100 }
 		}
@@ -2092,7 +2130,7 @@ guiTypes = {
 		}
 		### LEADER ASSIGNMENT ###
 		buttonType = {
-			name = "assign_character"
+			name = "assign_character_button"
 			position = { x = 0 y = 80 }
 			size = { x = 188 y = 160 }
 			spriteType = "GFX_invisible"
@@ -2108,10 +2146,30 @@ guiTypes = {
 			}
 		}
 		containerWindowType = {
+			name = "on_hover_assign_container_disabled"
+			iconType = {
+				name = "assign_character"
+				spriteType = "GFX_assign_leader_disabled"
+				position = { x = 95 y = 170 }
+				centerPosition = yes
+				alwaysTransparent = yes
+			}
+		}
+		containerWindowType = {
 			name = "on_hover_replace_container"
 			iconType = {
 				name = "replace_character"
 				spriteType = "GFX_replace_leader"
+				position = { x = 95 y = 170 }
+				centerPosition = yes
+				alwaysTransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "on_hover_replace_container_disabled"
+			iconType = {
+				name = "replace_character"
+				spriteType = "GFX_replace_leader_disabled"
 				position = { x = 95 y = 170 }
 				centerPosition = yes
 				alwaysTransparent = yes
@@ -2409,7 +2467,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		buttonType = {
-			name = "assign_character"
+			name = "assign_character_button"
 			position = { x = 0 y = 80 }
 			size = { x = 188 y = 160 }
 			spriteType = "GFX_invisible"
@@ -2956,6 +3014,15 @@ guiTypes = {
 			}
 		}
 		containerWindowType = {
+			name = "on_hover_assign_container_disabled"
+			iconType = {
+				name = "replace_character"
+				spriteType = "GFX_replace_leader_disabled"
+				position = { x = 40 y = 30 }
+				alwaysTransparent = yes
+			}
+		}
+		containerWindowType = {
 			name = "council_container"
 			iconType = {
 				name = "council_icon_bg"
@@ -3014,7 +3081,7 @@ guiTypes = {
 			vertical_alignment = center
 		}
 		buttonType = {
-			name = "assign_character"
+			name = "assign_character_button"
 			quadTextureSprite = "GFX_invisible"
 			size = { x = 90 y = 100 }
 			position = { x = 0 y = 6 }
@@ -3059,7 +3126,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		buttonType = {
-			name = "assign_character"
+			name = "assign_character_button"
 			quadTextureSprite = "GFX_invisible"
 			size = { x = 190 y = 190 }
 			position = { x = 50 y = 15 }
