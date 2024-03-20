@@ -462,8 +462,8 @@ guiTypes = {
 			### TRAITS ###
 			overlappingElementsBoxType = {
 				name = "traits_overlapping_box"
-				size = { x = 240 y = @trait_icon_size_h }
-				position = { x = -120 y = 65 }
+				size = { x = 200 y = @trait_icon_size_h }
+				position = { x = -100 y = 65 }
 				orientation = center
 				format = center
 				first_on_top = yes
@@ -968,7 +968,7 @@ guiTypes = {
 				alwaysTransparent = yes
 			}
 			iconType = {
-				name = "status_on_council_overlay"
+				name = "status_on_council_overlay" # UI LEADERS PATCH
 				position = { x = 3 y = 0 }
 				spriteType = "GFX_leader_status_on_council"
 				alwaysTransparent = yes
@@ -1284,7 +1284,7 @@ guiTypes = {
 				alwaysTransparent = yes
 			}
 			iconType = {
-				name = "already_on_council_overlay"
+				name = "already_on_council_overlay" # UI LEADERS PATCH
 				position = { x = 3 y = 0 }
 				spriteType = "GFX_leader_already_on_council"
 				alwaysTransparent = yes

@@ -1,5 +1,5 @@
 name="UI Overhaul Dynamic + Improved Leaders View"
-version="1.7"
+version="1.8"
 tags={
 	"Fixes"
 	"Utilities"
@@ -8,5 +8,5 @@ tags={
 	"Overhaul"
 }
 picture="thumbnail.png"
-supported_version="3.10.*"
+supported_version="3.11.*"
 remote_file_id="2978032655"
