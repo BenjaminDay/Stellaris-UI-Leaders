@@ -1,5 +1,5 @@
 name="UI Overhaul Dynamic + Improved Leaders View"
-version="1.9"
+version="2.0"
 tags={
 	"Fixes"
 	"Utilities"
@@ -8,6 +8,6 @@ tags={
 	"Overhaul"
 }
 picture="thumbnail.png"
-supported_version="3.12.*"
+supported_version="v4.0.*"
 path="C:/Users/Ben/Documents/Paradox Interactive/Stellaris/mod/UI Overhal Dynamic + Improved Leaders View"
 remote_file_id="2978032655"
