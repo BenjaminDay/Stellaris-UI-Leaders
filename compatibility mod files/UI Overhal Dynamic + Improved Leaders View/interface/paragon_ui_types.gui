@@ -38,7 +38,8 @@
 @horizontal_slim_subtitle_pos_y = 26
 @title_pos_x = 10
 guiTypes = {
-	### PORTRAIT COMPONENT VERTICAL (Trait Assignment View) ###
+	### PORTRAIT COMPONENT VERTICAL ###
+	# Not in use
 	containerWindowType = {
 		name = "paragon_portrait_container_vertical"
 		size = { width = 208 height = 242 }
@@ -223,7 +224,8 @@ guiTypes = {
 			}
 		}
 	}
-	### PORTRAIT COMPONENT VERTICAL_SMALL ### ASTRAL RIFT
+	### PORTRAIT COMPONENT VERTICAL_SMALL ### 
+	# Used by Astral Rift Leader - Hardcoded
 	containerWindowType = {
 		name = "paragon_portrait_container_vertical_small"
 		size = { width = 100%% height = 100%% }
@@ -474,6 +476,8 @@ guiTypes = {
 			}
 		}
 	}
+	### SECTOR GOVERNOR ###
+	# Used by PORTRAIT_GUI_NAME_PLANET_SECTOR_GOVERNOR
 	containerWindowType = {
 		name = "paragon_portrait_container_sector_governor"
 		size = { width = 100%% height = 100%% }
@@ -532,6 +536,7 @@ guiTypes = {
 		}
 	}
 	### PORTRAIT COMPONENT TOAST ###
+	# Used by PORTRAIT_GUI_NAME_TOAST
 	containerWindowType = {
 		name = "paragon_portrait_container_toast" # used in toast ui
 		size = { width = 100%% height = 100%% }
@@ -603,6 +608,7 @@ guiTypes = {
 		}
 	}
 	### PORTRAIT COMPONENT HORIZONTAL ###
+	# Not in use
 	containerWindowType = {
 		name = "paragon_portrait_container_horizontal"
 		size = { width = 100%% height = 100%% }
@@ -835,69 +841,34 @@ guiTypes = {
 			}
 		}
 	}
-	### PORTRAIT COMPONENT HORIZONTAL_SLIM (List entries in Leader View List, Leader Assignment List) ###
+	### PORTRAIT COMPONENT HORIZONTAL_SLIM ###
+	# Used by Astral Rift Leader Selection - Hardcoded
 	containerWindowType = {
 		name = "paragon_portrait_container_horizontal_slim"
-		size = { width = @slim_row_w height = @slim_row_h }
+		size = { width = 100%% height = 100%% }
 		clipping = no
 		background = {
 			name = "paragon_portrait_container_horizontal_slim"
 			spriteType = "GFX_invisible"
 			alwaysTransparent = yes
 		}
-		### IN LEADER POOL ###
-		containerWindowType = {
-			name = "in_player_pool_container"
-			size = { width = 100% height = 100% }
-			iconType = {
-				name = "status_bg_button"
-				spriteType = "GFX_leader_list_status_unowned"
-				position = { x = 4 y = 1 }
-				alwaysTransparent = yes
-			}
-			iconType = {
-				name = "status_bg"
-				spriteType = "GFX_leader_status_bg_for_hire"
-				position = { x = -45 y = 6 }
-				orientation = upper_right
-				pdx_tooltip = "LEADER_IDLING_HIRE"
-			}
-			iconType = {
-				name = "status_icon"
-				spriteType = "GFX_leader_status_icon_for_hire"
-				position = { x = -25 y = 8 }
-				orientation = upper_right
-				alwaysTransparent = yes
-			}
-			instantTextBoxType = {
-				name = "cost_text"
-				font = "font_text_16"
-				position = { x = -248 y = 62 }
-				orientation = upper_right
-				maxWidth = 140
-				maxHeight = 20
-				fixedSize = yes
-				format = right
-				vertical_alignment = center
-			}
-		}
 		### CLASS BACKGROUND ###
 		iconType = {
 			name = "leader_class_banner"
 			spriteType = "GFX_leader_class_bg_list"
-			position = { x = 9 y = 1.5 }
+			position = { x = 6 y = 1.5 }
 			alwaysTransparent = yes
 		}
 		### PORTRAIT ###
 		containerWindowType = {
 			name = "character_portrait_container_clipping_mask"
-			size = { width = 265 height = 86 }
-			position = { x = 5 y = 1 }
+			size = { width = 150 height = -5 }
+			position = { x = 0 y = 5 }
 			clipping = yes
 			iconType = {
 				name = "character_portrait"
 				quadTextureSprite = "GFX_ui_portrait_character_leaders"
-				position = { x = -20 y = 0 }
+				position = { x = -30 y = 0 }
 				scale = 0.28
 				alwaysTransparent = yes
 			}
@@ -906,31 +877,31 @@ guiTypes = {
 		iconType = {
 			name = "leader_rarity_icon"
 			spriteType = "GFX_leader_rarity_horizontal_slim"
-			position = { x = 4 y = 1 }
+			position = { x = 1 y = 1 }
 			alwaysTransparent = yes
 		}
 		### CLASS ###
 		iconType = {
 			name = "leader_type"
 			quadTextureSprite = "GFX_leader_icons"
-			position = { x = 13 y = 8 }
+			position = { x = 10 y = 8 }
 		}
 		containerWindowType = {
 			name = "leader_subclass_layered_icon_locator_0"
-			position = { x = 11 y = 28 }
+			position = { x = 8 y = 28 }
 		}
 		### SKILL ###
 		iconType = {
 			name = "skill_icon"
 			spriteType = "GFX_leader_skill"
-			position = { x = 18.5 y = 56 }
+			position = { x = 15.5 y = 56 }
 		}
 		### NAME AND TITLE ###
 		instantTextBoxType = {
 			name = "name_without_title_text"
 			font = "font_text_16"
 			position = { x = @horizontal_slim_title_pos_x y = @horizontal_slim_title_pos_y }
-			maxWidth = 270
+			maxWidth = 220
 			maxHeight = 20
 			fixedSize = yes
 			format = left
@@ -942,7 +913,7 @@ guiTypes = {
 			name = "leader_class_text"
 			font = "font_text_16"
 			position = { x = @horizontal_slim_title_pos_x y = @horizontal_slim_subtitle_pos_y }
-			maxWidth = 270
+			maxWidth = 220
 			maxHeight = 20
 			fixedSize = yes
 			format = left
@@ -953,23 +924,16 @@ guiTypes = {
 		containerWindowType = {
 			name = "council_container"
 			iconType = {
-				name = "council_position_bg"
-				spriteType = "GFX_leader_info_bg"
-				position = { x = 385 y = 25 }
-				centerPosition = yes
-				alwaysTransparent = yes
-			}
-			iconType = {
 				name = "council_position_icon"
 				spriteType = "GFX_council_position_icon"
-				position = { x = 385 y = 25 }
+				position = { x = 115 y = 25 }
 				centerPosition = yes
 			}
 			instantTextBoxType = {
 				name = "councilor_title"
 				font = "font_text_16"
 				position = { x = @horizontal_slim_title_pos_x y = @horizontal_slim_subtitle_pos_y }
-				maxWidth = 270
+				maxWidth = 220
 				maxHeight = 20
 				fixedSize = yes
 				format = left
@@ -986,100 +950,32 @@ guiTypes = {
 		### TRAITS ###
 		overlappingElementsBoxType = {
 			name = "traits_overlapping_box"
-			size = { x = 400 y = @trait_icon_size_h }
+			size = { x = 250 y = @trait_icon_size_h }
 			position = { x = 135 y = 50 }
 			first_on_top = yes
 		}
-		### AGE ###
-		containerWindowType = {
-			name = "age_container"
-			position = { x = -50 y = 4 }
-			size = { width = 42 height = 42 }
-			orientation = upper_right
-			origo = upper_right
-			iconType = {
-				name = "age_bg"
-				spriteType = "GFX_leader_info_bg"
-				orientation = center
-				centerPosition = yes
-				alwaysTransparent = yes
-			}
-			instantTextBoxType = {
-				name = "age_text"
-				font = "font_text_14"
-				maxWidth = 42
-				maxHeight = 42
-				fixedSize = yes
-				format = center
-				vertical_alignment = center
-			}
-		}
-		### HOME PLANET ###
-		containerWindowType = {
-			name = "home_planet_container"
-			position = { x = -95 y = 4 }
-			size = { width = 42 height = 42 }
-			orientation = upper_right
-			origo = upper_right
-			iconType = {
-				name = "home_planet_icon_bg"
-				spriteType = "GFX_leader_info_bg"
-				orientation = center
-				centerPosition = yes
-				alwaysTransparent = yes
-			}
-			iconType = {
-				name = "home_planet_icon"
-				quadTextureSprite = "GFX_planet_type"
-				orientation = center
-				centerPosition = yes
-				scale = 0.88
-			}
-		}
 		### ETHIC
-		containerWindowType = {
-			name = "ethic_container"
-			position = { x = -140 y = 4 }
-			size = { width = 42 height = 42 }
-			orientation = upper_right
-			origo = upper_right
-			iconType = {
-				name = "ethic_bg"
-				spriteType = "GFX_leader_info_bg"
-				orientation = center
-				centerPosition = yes
-				alwaysTransparent = yes
-			}
-			iconType = {
-				name = "ethic_icon"
-				spriteType = "GFX_leader_skill"
-				orientation = center
-				centerPosition = yes
-			}
-		}
-		### EXTERNAL LEADER ###
-		buttonType = {
-			name = "external_leader_flag_button"
-			quadTextureSprite = "GFX_empire_flag_32"
-			position = { x = -215 y = 10 }
-			orientation = upper_right
+		iconType = {
+			name = "ethic_icon"
+			spriteType = "GFX_leader_skill"
+			position = { x = 363 y = 52 }
 		}
 		### LEADER ASSIGNED ###
 		containerWindowType = {
 			name = "busy_container"
 			size = { width = 100%% height = 40 }
-			position = { x = 420 y = 0 }
+			position = { x = 370 y = 0 }
 			iconType = {
 				name = "status_bg"
 				spriteType = "GFX_leader_status_bg_assigned"
-				position = { x = -45 y = 6 }
+				position = { x = -43 y = 1 }
 				orientation = upper_right
 				pdx_tooltip = "LEADER_ASSIGNED"
 			}
 			iconType = {
 				name = "status_icon"
 				spriteType = "GFX_leader_status_icon_assigned"
-				position = { x = -25 y = 8 }
+				position = { x = -23 y = 3 }
 				orientation = upper_right
 				alwaysTransparent = yes
 			}
@@ -1100,7 +996,7 @@ guiTypes = {
 				name = "location_text"
 				font = "font_text_16"
 				position = { x = 35 y = @horizontal_slim_title_pos_y }
-				maxWidth = 200
+				maxWidth = 240
 				maxHeight = 20
 				fixedSize = yes
 				format = left
@@ -1111,54 +1007,6 @@ guiTypes = {
 				name = "activity_text"
 				font = "font_text_14"
 				position = { x = 35 y = @horizontal_slim_subtitle_pos_y }
-				maxWidth = 200
-				maxHeight = 35
-				fixedSize = yes
-				format = left
-				vertical_alignment = top
-				alwaysTransparent = yes
-			}
-		}
-		### LEADER IDLE ###
-		containerWindowType = {
-			name = "available_container"
-			size = { width = 100%% height = 40 }
-			position = { x = 420 y = 0 }
-			containerWindowType = {
-				name = "status_container"
-				size = { width = 42 height = 20 }
-				position = { x = -3 y = 6 }
-				orientation = upper_right
-				origo = upper_right
-				iconType = {
-					name = "status_bg"
-					spriteType = "GFX_leader_status_bg_no_assignment"
-					pdx_tooltip = "LEADER_MISSING_ASSIGNMENT"
-				}
-				iconType = {
-					name = "status_icon"
-					spriteType = "GFX_leader_status_icon_no_assignment"
-					position = { x = 22 y = 2 }
-					alwaysTransparent = yes
-				}
-			}
-			instantTextBoxType = {
-				name = "available_text"
-				font = "font_text_16"
-				text = "LEADER_IDLING_IN"
-				position = { x = 35 y = @horizontal_slim_title_pos_y }
-				maxWidth = 200
-				maxHeight = 20
-				fixedSize = yes
-				format = left
-				vertical_alignment = center
-				alwaysTransparent = yes
-			}
-			instantTextBoxType = {
-				name = "idle_text"
-				font = "font_text_14"
-				text = "UNASSIGNED"
-				position = { x = 35 y = @horizontal_slim_subtitle_pos_y }
 				maxWidth = 240
 				maxHeight = 35
 				fixedSize = yes
@@ -1167,23 +1015,10 @@ guiTypes = {
 				alwaysTransparent = yes
 			}
 		}
-		instantTextBoxType = {
-			name = "upkeep_text"
-			font = "font_text_16"
-			position = { x = -98 y = -47 }
-			orientation = lower_right
-			maxWidth = 90
-			maxHeight = 40
-			fixedSize = yes
-			format = right
-			vertical_alignment = bottom
-		}
 		containerWindowType = {
 			name = "owned_by_player_container"
 			size = { width = 198 height = 20 }
-			position = { x = -100 y = 62 }
-			orientation = upper_right
-			origo = upper_right
+			position = { x = 405 y = 62 }
 			background = {
 				name = "owned_by_player_container"
 				spriteType = "GFX_tiles_dark_area_cut_8"
@@ -1198,8 +1033,8 @@ guiTypes = {
 			}
 		}
 	}
-	### UIOD_DEV ###
-	### PORTRAIT COMPONENT HORIZONTAL GOVERNOR (Planet View) ###
+	### PORTRAIT COMPONENT HORIZONTAL GOVERNOR (###
+	# Not in use
 	containerWindowType = {
 		name = "paragon_portrait_container_horizontal_governor"
 		size = { width = 272 height = 140 }
@@ -1385,6 +1220,7 @@ guiTypes = {
 		}
 	}
 	### PORTRAIT COMPONENT ASSIGN COUNCILOR MENU ###
+	# Used by PORTRAIT_GUI_NAME_ASSIGNABLE_COUNCILOR_LIST_ENTRY
 	containerWindowType = {
 		name = "paragon_portrait_container_assign_councilor"
 		size = { width = @slim_row_w height = @slim_row_h }
@@ -1408,15 +1244,11 @@ guiTypes = {
 			clipping = yes
 			iconType = {
 				name = "character_portrait"
-				quadTextureSprite = "GFX_portrait_character_close_up"
-				position = { x = -20 y = -20 }
-				scale = 0.30
+				quadTextureSprite = "GFX_ui_portrait_character_leaders"
+				position = { x = -20 y = 0 }
+				scale = 0.28
+				alwaysTransparent = yes
 			}
-		}
-		buttonType = {
-			name = "assign_character_button"
-			quadTextureSprite = "GFX_invisible"
-			size = { x = 100 y = @slim_row_h }
 		}
 		### RARITY ###
 		iconType = {
@@ -1695,6 +1527,7 @@ guiTypes = {
 		}
 	}
 	### PORTRAIT COMPONENT ASSIGN NOT COUNCILOR MENUS ###
+	# Used by PORTRAIT_GUI_NAME_ASSIGNABLE_LEADER_LIST_ENTRY
 	containerWindowType = {
 		name = "paragon_portrait_container_leader_assignment"
 		size = { width = @slim_row_w height = @slim_row_h }
@@ -2045,6 +1878,7 @@ guiTypes = {
 		}
 	}
 	### PORTRAIT COMPONENT EXPANDED (Big Detailed Card in Leader View) ###
+	# Used by PORTRAIT_GUI_NAME_EXPANDED_LEADER_PORTRAIT
 	containerWindowType = {
 		name = "paragon_portrait_container_expanded"
 		size = { width = 100% height = 100% }
@@ -2336,16 +2170,16 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "leader_background_text"
 			font = "font_text_16"
-			position = { x = 10 y = 530 }
-			maxWidth = 414
+			position = { x = 15 y = 530 }
+			maxWidth = 404
 			maxHeight = 80
 			format = center
-			vertical_alignment = center
 			text_color_code = "E"
 			scrollbarType = "standardlistbox_slider_thick_small"
 		}
 	}
 	### PORTRAIT COMPONENT COUNCILOR SLOT ###
+	# Used by PORTRAIT_GUI_NAME_COUNCIL_POSITION
 	containerWindowType = {
 		name = "paragon_portrait_container_council"
 		size = { width = 188 height = 575 }
@@ -2712,11 +2546,12 @@ guiTypes = {
 				format = center
 				text_color_code = "E"
 				borderSize = { x = 2 y = 0 }
-				scrollbarType = "standardtext_slider_small"
+				scrollbarType = "standardlistbox_slider_thick_small"
 			}
 		}
 	}
 	### PORTRAIT COMPONENT GESTALT COUNCILOR SLOT ###
+	# Used by PORTRAIT_GUI_NAME_COUNCIL_POSITION_GESTALT
 	containerWindowType = {
 		name = "paragon_portrait_container_council_gestalt"
 		size = { width = 188 height = 350 }
@@ -2779,6 +2614,7 @@ guiTypes = {
 		}
 	}
 	### PORTRAIT COMPONENT RULER COUNCILOR SLOT ###
+	# Used by PORTRAIT_GUI_NAME_COUNCIL_VIEW_RULER
 	containerWindowType = {
 		name = "paragon_portrait_container_ruler_council"
 		size = { width = 188 height = 575 }
@@ -3095,11 +2931,12 @@ guiTypes = {
 				format = center
 				text_color_code = "E"
 				borderSize = { x = 2 y = 0 }
-				scrollbarType = "standardtext_slider_small"
+				scrollbarType = "standardlistbox_slider_thick_small"
 			}
 		}
 	}
 	###	GOVERNMENT RULER (Empire View) ###
+	# Used by PORTRAIT_GUI_NAME_GOVERNMENT_VIEW_RULER
 	containerWindowType = {
 		name = "paragon_portrait_container_ruler_government"
 		size = { width = 100%% height = 100%% }
@@ -3127,7 +2964,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "name_with_title_text"
-			font = "large_title_font"
+			font = "large_title_font_20"
 			position = { x = 15 y = 18 }
 			maxWidth = 900
 			maxHeight = 40
@@ -3145,7 +2982,7 @@ guiTypes = {
 		### RULER ICON ###
 		containerWindowType = {
 			name = "ruler_icon_container"
-			position = { x = 18 y = 57 }
+			position = { x = 18 y = 117 }
 			size = { width = 33 height = 38 }
 			background = {
 				name = "age_container"
@@ -3171,16 +3008,16 @@ guiTypes = {
 		iconType = {
 			name = "leader_type"
 			quadTextureSprite = "GFX_leader_icons_large"
-			position = { x = 10 y = 100 }
+			position = { x = 9 y = 160 }
 		}
 		containerWindowType = {
 			name = "leader_subclass_layered_icon_locator_1"
-			position = { x = 20 y = 144 }
+			position = { x = 18 y = 204 }
 		}
 		### SKILL ###
 		containerWindowType = {
 			name = "skill_container"
-			position = { x = 20 y = 180 }
+			position = { x = 18 y = 240 }
 			size = { width = 32 height = 37 }
 			iconType = {
 				name = "skill_icon_bg"
@@ -3199,7 +3036,7 @@ guiTypes = {
 		### ETHIC ###
 		containerWindowType = {
 			name = "ethic_container"
-			position = { x = 57 y = 176 }
+			position = { x = 57 y = 236 }
 			size = { width = 42 height = 42 }
 			background = {
 				name = "ethic_container"
@@ -3221,7 +3058,7 @@ guiTypes = {
 		### AGE ###
 		containerWindowType = {
 			name = "age_container"
-			position = { x = 103 y = 176 }
+			position = { x = 103 y = 236 }
 			size = { width = 42 height = 42 }
 			background = {
 				name = "age_container"
@@ -3246,11 +3083,12 @@ guiTypes = {
 		overlappingElementsBoxType = {
 			name = "traits_overlapping_box"
 			size = { x = 300 y = @trait_icon_size_h }
-			position = { x = 20 y = 225 }
+			position = { x = 20 y = 285 }
 			first_on_top = yes
 		}
 	}
 	### PORTRAIT COMPONENT GOVERNMENT HEIR (Empire View) ###
+	# Used by PORTRAIT_GUI_NAME_GOVERNMENT_VIEW_HEIR
 	containerWindowType = {
 		name = "paragon_portrait_container_heir"
 		size = { width = 100%% height = 100%% }
@@ -3266,11 +3104,11 @@ guiTypes = {
 			clipping = yes
 			iconType = {
 				name = "character_portrait"
-				quadTextureSprite = "GFX_portrait_character_close_up"
-				position = { x = 0 y = 20 }
+				quadTextureSprite = "GFX_ui_portrait_character_fade_large"
+				position = { x = 0 y = 0 }
 				orientation = center
 				centerPosition = yes
-				scale = 0.7
+				scale = 0.86
 			}
 		}
 		containerWindowType = {
@@ -3443,7 +3281,8 @@ guiTypes = {
 			first_on_top = yes
 		}
 	}
-	### PORTRAIT COMPONENT HEAD OF RESEARCH (TECHNOLOGY VIEW) ###
+	### PORTRAIT COMPONENT HEAD OF RESEARCH (Technology View) ###
+	# Used by PORTRAIT_GUI_NAME_TECH_VIEW
 	containerWindowType = {
 		name = "paragon_portrait_container_research"
 		size = { width = 100%% height = 100%% }
@@ -3499,15 +3338,15 @@ guiTypes = {
 			### PORTRAIT ###
 			containerWindowType = {
 				name = "character_portrait_container_clipping_mask"
-				size = { width = 100% height = 100% }
+				size = { width = 322 height = 100% }
 				clipping = yes
 				iconType = {
 					name = "character_portrait"
 					quadTextureSprite = "GFX_ui_portrait_character_research"
-					position = { x = -50 y = 0 }
+					position = { x = 0 y = -15 }
 					orientation = center
 					centerPosition = yes
-					scale = 0.699
+					scale = 0.64
 					alwaysTransparent = yes
 				}
 			}
@@ -3622,6 +3461,7 @@ guiTypes = {
 		}
 	}
 	###	PORTRAIT COMPONENT RECRUITMENT EVENT ###
+	# Used by PORTRAIT_GUI_NAME_EVENT_RECRUIT
 	containerWindowType = {
 		name = "paragon_portrait_container_recruit_event"
 		size = { width = 100%% height = 100%% }
@@ -3831,6 +3671,7 @@ guiTypes = {
 		}
 	}
 	### PORTRAIT COMPONENT STORY EVENT ###
+	# Used by PORTRAIT_GUI_NAME_EVENT_STORY
 	containerWindowType = {
 		name = "paragon_portrait_container_story_event"
 		size = { width = 100%% height = 100%% }
@@ -3855,6 +3696,7 @@ guiTypes = {
 		}
 	}
 	###	PORTRAIT COMPONENT CONVERSATION EVENT ###
+	# Used by PORTRAIT_GUI_NAME_EVENT_CONVERSATION
 	containerWindowType = {
 		name = "paragon_portrait_container_conversation_event"
 		size = { width = 100%% height = 100%% }
@@ -3880,6 +3722,7 @@ guiTypes = {
 		}
 	}
 	###	PORTRAIT COMPONENT CRISIS CONVERSATION EVENT ###
+	# Used by PORTRAIT_GUI_NAME_EVENT_CRISIS_CONVERSATION
 	containerWindowType = {
 		name = "paragon_portrait_container_crisis_conversation_event"
 		size = { width = 370 height = 800 }

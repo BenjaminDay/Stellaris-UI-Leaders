@@ -1,5 +1,5 @@
 name="Improved Leaders View (UI)"
-version="1.9"
+version="2.0"
 tags={
 	"Graphics"
 	"Utilities"
@@ -7,6 +7,6 @@ tags={
 	"Overhaul"
 }
 picture="thumbnail.png"
-supported_version="v4.0.*"
+supported_version="v4.2.*"
 path="C:/Users/Ben/Documents/Paradox Interactive/Stellaris/mod/Improved Leaders View (UI)"
 remote_file_id="2976235256"
