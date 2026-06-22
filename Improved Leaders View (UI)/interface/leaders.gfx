@@ -701,4 +701,39 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 	}
 
+	spriteType = {
+		name = "GFX_message_leader_recruitment_revenant"
+		texturefile = "gfx/interface/icons/message/message_leader_recruitment_revenant.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+
+	spriteType = {
+		name = "GFX_message_leader_recruitment_sage"
+		texturefile = "gfx/interface/icons/message/message_leader_recruitment_sage.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+
+	spriteType = {
+		name = "GFX_message_leader_recruitment_naturalist"
+		texturefile = "gfx/interface/icons/message/message_leader_recruitment_naturalist.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+
+	spriteType = {
+		name = "GFX_message_leader_recruitment_caregiver"
+		texturefile = "gfx/interface/icons/message/message_leader_recruitment_caregiver.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+
+	spriteType = {
+		name = "GFX_message_leader_recruitment_champion"
+		texturefile = "gfx/interface/icons/message/message_leader_recruitment_champion.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+
+	spriteType = {
+		name = "GFX_message_leader_recruitment_princess"
+		texturefile = "gfx/interface/icons/message/message_leader_recruitment_princess.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
 }

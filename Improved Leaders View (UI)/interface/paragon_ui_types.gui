@@ -1147,6 +1147,231 @@ guiTypes = {
 		}
 	}
 
+
+	### PORTRAIT COMPONENT HORIZONTAL ARKSHIP LEADER (Planet View - Arkship Controls) ###
+
+	containerWindowType = {
+		name = "paragon_portrait_container_horizontal_arkship_leader"
+		size = { width = 150 height = 155 }
+		position = { x = 0 y = 0 }
+		clipping = yes
+
+		### PORTRAIT ###
+		containerWindowType = {
+			name = "character_portrait_container_clipping_mask"
+			size = { width = 236 height = 155 }
+			position = { x = 5 y = 0 }
+			orientation = upper_left
+			clipping = yes
+
+			iconType = {
+				name = "character_portrait"
+				quadTextureSprite = "GFX_portrait_character_close_up"
+				position = { x = -60 y = -20 }
+				scale = 0.5
+				alwaysTransparent = no
+			}
+		}
+
+		### EMPTY SLOT ###
+
+		containerWindowType = {
+			name = "no_character_container"
+			size = { width = 112 height = 140 }
+			position = { x = 3 y = 20 }
+
+			iconType = {
+				name = "empty_leader_icon"
+				quadTextureSprite = "GFX_empty_leader"
+				position = { x = 8 y = 6 }
+				scale = 1.6
+			}
+
+			iconType = {
+				name = "empty_leader_icon2"
+				quadTextureSprite = "GFX_empty_leader"
+				position = { x = 8 y = 6 }
+				scale = 1.6
+			}
+		}
+
+		### LEADER ASSIGNMENT ###
+
+		containerWindowType = {
+			name = "on_hover_assign_container"
+			position = { x = 0 y = 0 }
+
+			iconType = {
+				name = "assign_character"
+				position = { x = 75 y = 75 }
+				spriteType = "GFX_assign_leader"
+				centerPosition = yes
+				alwaystransparent = yes
+				scale = 1
+			}
+		}
+
+		containerWindowType = {
+			name = "on_hover_assign_container_disabled"
+			position = { x = 0 y = 0 }
+
+			iconType = {
+				name = "assign_character"
+				position = { x = 42 y = 54 }
+				spriteType = "GFX_assign_leader_disabled"
+				centerPosition = yes
+				alwaystransparent = yes
+				scale = 1
+			}
+		}
+
+		containerWindowType = {
+			name = "on_hover_replace_container"
+			position = { x = 0 y = 0 }
+
+			iconType = {
+				name = "replace_character"
+				position = { x = 75 y = 75 }
+				spriteType = "GFX_replace_leader"
+				centerPosition = yes
+				alwaystransparent = yes
+				scale = 1
+			}
+		}
+
+		containerWindowType = {
+			name = "on_hover_replace_container_disabled"
+			position = { x = 0 y = 0 }
+
+			iconType = {
+				name = "replace_character"
+				position = { x = 75 y = 75 }
+				spriteType = "GFX_replace_leader_disabled"
+				centerPosition = yes
+				alwaystransparent = yes
+				scale = 1
+			}
+		}
+
+		buttonType = {
+			name = "assign_character_button"
+			quadTextureSprite = "GFX_invisible"
+			size = { x = 152 y = 140 }
+			position = { x = 0 y = 0 }
+		}
+
+		### ASSIGNED LEADER INFO ###
+
+		containerWindowType = {
+			name = "leader_container"
+			position = { x = 0 y = 0 }
+			size = { width = 155 height = 272 }
+			clipping = yes
+
+			### CLASS ###
+
+			iconType = {
+				name = "leader_type"
+				quadTextureSprite = "GFX_leader_icons"
+				position = { x = 8 y = 33 }
+			}
+
+			containerWindowType = {
+				name = "leader_subclass_layered_icon_locator_0"
+				position = { x = 6 y = 59 }
+			}
+
+			### SKILL ###
+
+			iconType = {
+				name = "skill_icon_bg"
+				spriteType = "GFX_leader_skill_bg"
+				position = { x = 22 y = 122 }
+				scale = .75
+				centerPosition = yes
+			}
+
+			iconType = {
+				name = "skill_icon"
+				position = { x = 22 y = 122 }
+				spriteType = "GFX_leader_skill"
+				centerPosition = yes
+				scale = 1
+			}
+
+			iconType = {
+				name = "experience_bar"
+				position = { x = 3 y = 145 }
+				spriteType = "GFX_queue_progressbar_150"
+			}
+
+			### COUNCILOR INFO ###
+
+			containerWindowType = {
+				name = "council_container"
+
+				iconType = {
+					name = "council_position_icon"
+					spriteType = "GFX_council_position_icon"
+					position = { x = 8 y = 2 }
+				}
+			}
+
+			### NAME AND TITLE ###
+			@title_x = 40
+			instantTextBoxType={
+				name = "name_without_title_text"
+				font = "cg_16b"
+				position = { x = @title_x y = 2 }
+				maxWidth = 150
+				maxHeight = 20
+				fixedSize = yes
+				format = left
+				text_color_code = "Y"
+			}
+
+			buttonType = {
+				name = "rename_leader"
+				position = { x = @title_x y = -2 }
+				size = { x = 134 y = 20 }
+				quadTextureSprite = "GFX_invisible"
+			}
+
+			instantTextBoxType = {
+				name = "councilor_title"
+				font = "cg_16b"
+				position = { x = @title_x y = 16 }
+				maxWidth = 140
+				maxHeight = 25
+				format = left
+				multiline = no
+				alwaystransparent = no
+				truncate = yes
+			}
+
+			instantTextBoxType={
+				name = "leader_class_text"
+				font = "cg_16b"
+				position = { x = @title_x y = 16 }
+				maxWidth = 150
+				maxHeight = 20
+				fixedSize = yes
+				format = left
+				alwaystransparent = yes
+			}
+
+			### TRAITS ###
+
+			OverlappingElementsBoxType = {
+				name = "traits_overlapping_box"
+				position = { x = 38 y = 105 }
+				size = { x = 112 y = 30 }
+				first_on_top = yes
+			}
+
+		}
+	}
+
 	### PORTRAIT COMPONENT HORIZONTAL GOVERNOR (Planet View) ###
 
 	containerWindowType = {
@@ -3335,13 +3560,19 @@ guiTypes = {
 		containerWindowType = {
 			name = "character_expanded_portrait_container_clipping_mask"
 			position = { x = 0 y = 0 }
-			size = { width = 100% height = 500 }
+			size = { width = 100% height = 325 }
 			clipping = no
+
+			background = {
+				name = "portrait_hitbox"
+				spriteType = "GFX_invisible"
+			}
 
 			iconType = {
 				name = "character_portrait"
 				quadTextureSprite = "GFX_portrait_character_large"
-				position = { x = -70 y = -155 }
+				position = { x = -70 y = -175 }
+				alwaysTransparent = yes
 			}
 		}
 
@@ -3350,7 +3581,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "leader_rarity_text"
 			font = "cg_16b"
-			position = { x = 453 y = 80 }
+			position = { x = 453 y = 58 }
 			maxWidth = 543
 			maxHeight = 22
 			fixedSize = yes
@@ -3363,19 +3594,19 @@ guiTypes = {
 		iconType = {
 			name = "leader_type"
 			quadTextureSprite = "GFX_leader_icons_medium"
-			position = { x = 662 y = 377 }
+			position = { x = 652 y = 357 }
 			scale = 0.86
 		}
 
 		containerWindowType = {
 			name = "leader_subclass_layered_icon_locator_1"
-			position = { x = 663 y = 405 }
+			position = { x = 653 y = 384 }
 		}
 
 		instantTextBoxType={
 			name = "leader_class_text_noprefix"
 			font = "cg_16b"
-			position = { x = 706 y = 383 }
+			position = { x = 706 y = 360 }
 			maxWidth = 150
 			maxHeight = 20
 			fixedSize = yes
@@ -3388,7 +3619,7 @@ guiTypes = {
 		instantTextBoxType={
 			name = "leader_subclass_text"
 			font = "cg_16b"
-			position = { x = 706 y = 410 }
+			position = { x = 706 y = 390 }
 			maxWidth = 150
 			maxHeight = 20
 			fixedSize = yes
@@ -3402,14 +3633,14 @@ guiTypes = {
 		iconType = {
 			name = "ethic_icon"
 			spriteType = "GFX_leader_skill"
-			position = { x = 865 y = 390 }
+			position = { x = 845 y = 357 }
 		}
 
 		### TRAITS ###
 
 		OverlappingElementsBoxType = {
 			name = "traits_overlapping_box"
-			position = { x = 665 y = 490 }
+			position = { x = 655 y = 471 }
 			size = { x = 250 y = 40 }
 			first_on_top = yes
 		}
@@ -3418,7 +3649,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "upkeep_text"
-			position = { x = 723 y = 559 }
+			position = { x = 723 y = 552 }
 			font = "cg_16b"
 			maxWidth = 200
 			maxHeight = 25
@@ -3461,13 +3692,19 @@ guiTypes = {
 		containerWindowType = {
 			name = "character_expanded_portrait_container_clipping_mask"
 			position = { x = 0 y = 0 }
-			size = { width = 100% height = 500 }
+			size = { width = 100% height = 325 }
 			clipping = no
+
+			background = {
+				name = "portrait_hitbox"
+				spriteType = "GFX_invisible"
+			}
 
 			iconType = {
 				name = "character_portrait"
 				quadTextureSprite = "GFX_portrait_character_large"
-				position = { x = -70 y = -155 }
+				position = { x = -70 y = -175 }
+				alwaysTransparent = yes
 			}
 		}
 	}
